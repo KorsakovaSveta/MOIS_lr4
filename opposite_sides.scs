@@ -1,17 +1,15 @@
-opposite_sides_of_the_world=[*
-
 sc_node_norole_relation->opposite_sides_of_the_world;;
-sc_node_not_relation->concept_side_of_the_world;;
-sc_node_not_relation->concept_south;;
-sc_node_not_relation->concept_north;;
-sc_node_not_relation->concept_poles_of_the_earth;;
-sc_node_not_relation->concept_number;;
-sc_node_not_relation->concept_parametr;;
-sc_node_not_relation->concept_arity;;
-sc_node_not_relation->concept_binary_relation;;
+sc_node_not_relation->side_of_the_world;;
+sc_node_not_relation->south;;
+sc_node_not_relation->north;;
+sc_node_not_relation->poles_of_the_earth;;
+sc_node_not_relation->number;;
+sc_node_not_relation->parametr;;
+sc_node_not_relation->arity;;
+sc_node_not_relation->binary_relation;;
 
-opposite_sides_of_the_world=>nrel_main_idif:[opposite sides of the world](*<-lang_en;;*);;
-opposite_sides_of_the_world=>nrel_main_idif:[противоположные стороны света](*<-lang_ru;;*);;
+opposite_sides_of_the_world=>nrel_main_idtf:[opposite sides of the world](*<-lang_en;;*);;
+opposite_sides_of_the_world=>nrel_main_idtf:[противоположные стороны света](*<-lang_ru;;*);;
 
 
 sc_definition -> ...(*
@@ -46,6 +44,3 @@ arity->binary_relation;;
 binary_relation->opposite_sides_of_the_world;
 =>2;;
 2<-number;;
-
-
-*];;
