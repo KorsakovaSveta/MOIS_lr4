@@ -102,8 +102,10 @@ concept_BC
 
 concept_CD
 <=nrel_side_side:concept__ABCD;
-<-concept_segment;
-<-...;
+<-concept_segment;;
+
+...
+->concept_CD;
 <-concept_exact_value;concept_length;
 =>nrel_measurement_in_decimeters:x;;
 
