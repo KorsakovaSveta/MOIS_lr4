@@ -1,0 +1,51 @@
+opposite_sides_of_the_world=[*
+
+sc_node_norole_relation->opposite_sides_of_the_world;;
+sc_node_not_relation->concept_side_of_the_world;;
+sc_node_not_relation->concept_south;;
+sc_node_not_relation->concept_north;;
+sc_node_not_relation->concept_poles_of_the_earth;;
+sc_node_not_relation->concept_number;;
+sc_node_not_relation->concept_parametr;;
+sc_node_not_relation->concept_arity;;
+sc_node_not_relation->concept_binary_relation;;
+
+opposite_sides_of_the_world=>nrel_main_idif:[opposite sides of the world](*<-lang_en;;*);;
+opposite_sides_of_the_world=>nrel_main_idif:[противоположные стороны света](*<-lang_ru;;*);;
+
+
+sc_definition -> ...(*
+    ->rrel_key_sc_element:opposite_sides_of_the_world;;
+
+    <=nrel_sc_text_translation: ... (*->rrel_example:[Противоположные стороны света-бинарное отношение связывающее две стороны света.](*<-lang_ru;;*);;*);;
+
+    =>nrel_main_idtf:[Опр.(противоположные стороны света)](*<-lang_ru;;*);;
+
+    =>nrel_using_constants:{
+        side_of_the_world
+
+    };;
+*);;
+
+sc_statement -> ...(*
+    ->rrel_key_sc_element:opposite_sides_of_the_world;;
+
+    <=nrel_sc_text_translation: ... (*->rrel_example:[Противоположные стороны света- север и юг- определяются полюсами Земли.](*<-lang_ru;;*);;*);;
+
+    =>nrel_main_idtf:[Утв.(определение противоположных сторон света)](*<-lang_ru;;*);;
+
+    =>nrel_using_constants:{
+        north;
+        south;
+        poles_of_the_earth
+    };;
+*);;
+   south<=>opposite_sides_of_the_world:north;;
+parametr->arity;;
+arity->binary_relation;;
+binary_relation->opposite_sides_of_the_world;
+=>2;;
+2<-number;;
+
+
+*];;
