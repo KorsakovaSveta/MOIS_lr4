@@ -37,8 +37,8 @@ sc_node_norole_relation->nrel_unit_of_measurement;;
 
 
 
-concept_trapezoid
-=>nrel_include:concept_rectangular_trapezoid;
+concept_rectangular_trapezoid
+<=nrel_include:concept_trapezoid;
 ->concept_ABCD;;
 
 concept_A
