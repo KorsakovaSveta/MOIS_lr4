@@ -41,8 +41,9 @@ sc_statement -> ...(*
     };;
 *);;
 
-binary_relation->opposite_sides_of_the_world;
-=>2;
+number->2;;
+binary_relation=>2;
+->opposite_sides_of_the_world;
 <-arity;;
 arity<-parametr;;
-2<-number;;
+south<=>opposite_sides_of_the_world:north;;
