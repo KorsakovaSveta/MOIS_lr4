@@ -1,5 +1,5 @@
 
-compas=[*
+concept_compas=[*
 sc_node_not_relation->compas;;
 sc_node_not_relation->cardinal_direction;;
 sc_node_not_relation->earths_magnetic_poles;;  
