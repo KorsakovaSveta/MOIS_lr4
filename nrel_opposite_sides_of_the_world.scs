@@ -71,8 +71,8 @@ opposite_sides_of_the_world
 <-simetrichnoe;antirefleksivnoe;antitransitivnoe;;
 
 relation
-->include:undirected_relation;
-->include:binary_relation;;
+=>include:undirected_relation;
+=>include:binary_relation;;
 
 binary_relation
 =>include:simetrichnoe;
