@@ -1,0 +1,66 @@
+logic1=[*
+
+sc_node_not_relation->compas;;
+sc_node_not_relation->magnetic_pole;;
+sc_node_not_relation->side_of_the_world;;
+sc_node_not_relation->device_that_facilitates_orientation_on_the_terrain;;
+
+sc_node_norole_relation->nrel_universality;;
+sc_node_norole_relation->nrel_equivalence;;
+sc_node_norole_relation->nrel_existence;;
+sc_node_norole_relation->point_out;;
+
+
+sc_node_role_relation->rrel_linked_variables;;
+
+
+nrel_universality -> ...
+(*
+     -> rrel_linked_variables: ...
+                               (*
+                                    <-_y;;
+                               *);;
+     -> ...
+     (*
+        <- nrel_equivalence;;
+             -> ...
+             (*
+                <- compas(* _-> _y;;*);;
+                <-_y;;
+                
+             *);;
+             -> ...
+             (*
+                <- nrel_existence;;
+                     -> rrel_linked_variables: ...
+                                               (*
+                                                    <- _mpE;;
+                                                    <-_ss;;
+                                               *);;
+                    -> ...
+                    (*
+                         <- nrel_equivalence;;
+                             -> ...
+                                         (*
+                                            
+                                            <-magnetic_pole(*_-> _mpE;;*);;
+                                            <-_mpE;;
+                                             <- _y(*_=>point_out:_mpE;;*);;
+
+                                            
+                                            <-side_of_the_world(*_-> _ss;;*);;
+                                             <-_ss;;
+                                             <- _y(*_=>point_out:_ss;;*);;
+                                             
+                            
+                                         *);;
+                             -> ...
+                                           (*
+                                               <- device_that_facilitates_orientation_on_the_terrain(*_-> _y;;*);;
+                                               <-y;;
+                                           *);;
+                    *);;
+             *);;
+     *);;
+*);;                      
+*];;
