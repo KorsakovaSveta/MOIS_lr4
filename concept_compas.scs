@@ -1,13 +1,9 @@
-
-concept_compas=[*
 sc_node_not_relation->compas;;
 sc_node_not_relation->cardinal_direction;;
 sc_node_not_relation->earths_magnetic_poles;;  
 sc_node_not_relation->terrain_orientation;;
 sc_node_not_relation->device;;
-sc_node_role_relation->rrel_example;;
 sc_node_not_relation->navigation_device;;
-sc_node_norole_relation->nrel_include;;
 
 compas=>nrel_main_idtf:[compas](*<-lang_en;;*);;
 compas=>nrel_main_idtf:[компас](*<-lang_ru;;*);;
@@ -37,7 +33,4 @@ sc_statement -> ...(*
 
 *);;
 compas->rrel_example:magnetic_compas;;
-navigation_device=>nrel_include:compas;;
-
-
-*];;
+navigation_device=>nrel_inclusion:compas;;
