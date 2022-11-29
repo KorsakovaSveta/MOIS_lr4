@@ -7,8 +7,6 @@ number<-sc_node_not_relation;;
 parametr<-sc_node_not_relation;;
 arity<-sc_node_not_relation;;
 binary_relation<-sc_node_not_relation;;
-_subject_domen1<-sc_node_norole_relation;;
-_subject_domen2<-sc_node_norole_relation;;
 set<-sc_node_not_relation;;
 score_of_definition<-sc_node_norole_relation;;
 sc_node_not_relation->antitransitivnoe;;
@@ -62,8 +60,8 @@ binary_relation->opposite_sides_of_the_world;
 <=union:set;;
 
 opposite_sides_of_the_world
-=>first_domen:side_of_the_world;
-=>second_domen:side_of_the_world;
+=>nrel_first_domain:side_of_the_world;
+=>nrel_second_domain:side_of_the_world;
 =>score_of_definition:set;
 <-simetrichnoe;antirefleksivnoe;antitransitivnoe;;
 
